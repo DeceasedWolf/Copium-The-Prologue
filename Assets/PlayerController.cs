@@ -88,4 +88,9 @@ public class PlayerController : MonoBehaviour
     private void OnMove(InputValue movementValue) {
         _movementInput = movementValue.Get<Vector2>();
     }
+    
+    private void OnSwingAttack() {
+        _animator.SetTrigger("swordAttackRight");
+    }
+    
 }
